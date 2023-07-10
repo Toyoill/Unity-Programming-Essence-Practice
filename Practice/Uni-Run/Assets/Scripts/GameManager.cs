@@ -16,13 +16,10 @@ public class GameManager : MonoBehaviour {
     // 게임 시작과 동시에 싱글톤을 구성
     void Awake() {
         // 싱글톤 변수 instance가 비어있는가?
-        if (instance == null)
-        {
+        if (instance == null) {
             // instance가 비어있다면(null) 그곳에 자기 자신을 할당
             instance = this;
-        }
-        else
-        {
+        } else {
             // instance에 이미 다른 GameManager 오브젝트가 할당되어 있는 경우
 
             // 씬에 두개 이상의 GameManager 오브젝트가 존재한다는 의미.
@@ -34,15 +31,22 @@ public class GameManager : MonoBehaviour {
 
     void Update() {
         // 게임 오버 상태에서 게임을 재시작할 수 있게 하는 처리
+        if (isGameover && Input.GetMouseButton(0)) {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
     }
 
     // 점수를 증가시키는 메서드
     public void AddScore(int newScore) {
-        
+        if (!isGameover) {
+            score += newScore;
+            scoreText.text = "Score: " + score;
+        }
     }
 
     // 플레이어 캐릭터가 사망시 게임 오버를 실행하는 메서드
     public void OnPlayerDead() {
-        
+        isGameover = true;
+        gameoverUI.SetActive(true);
     }
 }

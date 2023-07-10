@@ -24,7 +24,6 @@ public class PlayerController : MonoBehaviour {
         // 사용자 입력을 감지하고 점프하는 처리
         if (isDead) return;
         if (Input.GetMouseButtonDown(0) && jumpCount < 2) {
-            Debug.Log(jumpCount);
             jumpCount++;
             playerRigidbody.velocity = Vector2.zero;
             playerRigidbody.AddForce(new Vector2(0, jumpForce));
@@ -39,12 +38,16 @@ public class PlayerController : MonoBehaviour {
 
     private void Die() {
         // 사망 처리
+
         animator.SetTrigger("Die");
 
+        playerAudio.clip = deathClip;
         playerAudio.Play();
 
         playerRigidbody.velocity = Vector2.zero;
         isDead = true;
+
+        GameManager.instance.OnPlayerDead();
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
@@ -54,7 +57,6 @@ public class PlayerController : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D collision) {
         // 바닥에 닿았음을 감지하는 처리
-
         if (collision.GetContact(0).normal.y > 0.7f) {
             isGrounded = true;
             jumpCount = 0;
