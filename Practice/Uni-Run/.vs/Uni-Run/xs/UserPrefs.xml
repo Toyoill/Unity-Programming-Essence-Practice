@@ -2,14 +2,22 @@
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlayerController.cs">
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5e712490-1879-47a1-80e8-e1dda974e21c" />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/PlatformSpawner.cs">
     <Files>
-      <File FileName="Assets/Scripts/PlayerController.cs" Line="25" Column="28" />
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="26" Column="60" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="34" Column="34" />
+      <File FileName="Assets/Scripts/ScrollingObject.cs" Line="6" Column="1" />
+      <File FileName="Assets/Scripts/Platform.cs" Line="11" Column="25" />
+      <File FileName="Assets/Scripts/PlatformSpawner.cs" Line="28" Column="66" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="Uni-Run" expanded="True">
+          <Node name="Uni-Run">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True" />
             </Node>
@@ -18,8 +26,4 @@
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="9bc03254-5394-407c-ac5c-9caecc7c7c1d" />
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
 </Properties>
