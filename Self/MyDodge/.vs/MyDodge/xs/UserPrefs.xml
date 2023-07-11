@@ -1,0 +1,29 @@
+﻿<Properties StartupConfiguration="{E5AE9BB7-5909-A507-CF4A-FA358185D93D}|">
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="1378660f-477d-4375-9403-0176f93fa68a" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/GameManager.cs">
+    <Files>
+      <File FileName="Assets/Scripts/PlayerController.cs" Line="27" Column="31" />
+      <File FileName="Assets/Scripts/Bullet.cs" Line="19" Column="37" />
+      <File FileName="Assets/Scripts/BulletSpawner.cs" Line="14" Column="19" />
+      <File FileName="Assets/Scripts/Spinner.cs" Line="10" Column="6" />
+      <File FileName="Assets/Scripts/GameManager.cs" Line="26" Column="17" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="MyDodge" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
